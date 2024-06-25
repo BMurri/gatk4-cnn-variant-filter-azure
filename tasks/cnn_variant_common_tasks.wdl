@@ -317,7 +317,7 @@ command <<<
   echo "ls (4): complete"
   >>>
   runtime {
-    docker: "broadinstitute/genomes-in-the-cloud:2.1.1"
+    docker: "broadinstitute/genomes-in-the-cloud:2.3.1-1512499786"
     memory: machine_mem + " MB"
     disk: disk_space_gb + " GB"
     preemptible: true
@@ -346,7 +346,7 @@ task SamtoolsMergeBAMs {
     }
 
   runtime {
-    docker: "broadinstitute/genomes-in-the-cloud:2.1.1"
+    docker: "broadinstitute/genomes-in-the-cloud:2.3.1-1512499786"
     memory: "16 GB"
     disk: disk_space_gb + " GB"
   }
